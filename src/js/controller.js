@@ -140,10 +140,11 @@ const newFeature = function () {
 const init = function () {
   bookmarksView.addHandlerRender(controlBookmarks);
   recipeView.addHandlerRender(controlRecipes);
-  searchView.addHandlerSearch(controlSearchResults);
-  paginationView.addHandlerPagination(controlPagination);
   recipeView.addHandlerUpdateServings(controlServing);
   recipeView.addHandlerAddBookmark(controlAddBookmark);
+  searchView.addHandlerSearch(controlSearchResults);
+  paginationView.addHandlerPagination(controlPagination);
+
   addRecipeView.addHandlerUpload(controlAddRecipe);
   newFeature();
 };
